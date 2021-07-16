@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortner URL</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <header class="header">
+            <h1 class="heading-primary u-center-text">Shorten URL</h1>
+        </header>
+        <main>
+            <div class="input section">
+                <h2 class="heading-secondary">Cut short your long url for free! </h2>
+                <form class="input-box" onSubmit="executeSURL();return false">
+                    <input type="url" pattern="https://.*" id="input-text" placeholder="https://example.com" required>
+                    <input type="submit" value="Shorten" id="input-btn">
+                </form>
+            </div>
+            <div class="output" id="output-div">
+                <p class="output__text" id="output-short-text">Your Short Url:- <a href="" target="_blank"
+                        class="output__link" id="output-short-link"></a></p>
+            </div>
+
+            <div class="error" id="error-div">
+                <p class="error__text" id="error-text">Invalid URL! Please try again..</p>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer__text u-center-text">&#169; 2021 copyright all right reserved</p>
+    </footer>
+</body>
+
+</html>

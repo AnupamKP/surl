@@ -6,7 +6,7 @@ const outputShortLinkElement = document.querySelector("#output-short-link");
 const outputDivElement = document.querySelector(".output");
 const errorDivElement = document.querySelector(".error");
 
-const api = "http://localhost:3000/url/";
+const api = "https://surl-app.herokuapp.com/url/";
 
 window.onload = () => {
   inputTextElement.focus();

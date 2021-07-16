@@ -3,7 +3,7 @@ const shortid = require("shortid");
 //const db = require("../utils/db");
 const router = express.Router();
 const urls = {};
-const host = "http://localhost:3000/url/"
+const host = "https://surl-app.herokuapp.com/url/"
 
 
 router.get("/:shortUrlId", (req, res) => {
